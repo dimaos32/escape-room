@@ -4,7 +4,7 @@ $black: #000000;
 
 $black-almost:#1c1c1c;
 
-$white-dirty: #e5e5e5;
+$white-dirty: #e6e6e6;
 $white-almost: #f0f0f0;
 
 $white: #ffffff;
@@ -31,7 +31,13 @@ $desktop-width-only: 1024px;
 // Blocks
 
 $page--txt: $white;
+$page--txt-alt: $white-dirty;
 $page--bg: $black-almost;
+
+
+$btn--txt: $white;
+$btn--bg: $site;
+$btn--bg-hover: $site-bright;
 
 
 $logo--color: white;
@@ -40,3 +46,4 @@ $logo--color-hover: $site;
 $site-nav--link: $white-almost;
 $site-nav--link--quests: $white;
 $site-nav--link--location : $site-darker;
+$site-nav--link--question : $white-dirty;

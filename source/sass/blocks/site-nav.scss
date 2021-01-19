@@ -1,6 +1,8 @@
 .site-nav {
   position: fixed;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
 }
@@ -14,6 +16,24 @@
   letter-spacing: 0.03em;
   color: $site-nav--link;
   font-feature-settings: "pnum" on, "lnum" on;
+  outline: none;
+
+  span {
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    padding-bottom: 9px;
+
+    span {
+      border-bottom: 1px dashed $site-nav--link;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   &--quests {
     color: $site-nav--link--quests;
@@ -22,6 +42,7 @@
   &--location {
     display: flex;
     align-items: center;
+    margin-right: 5px;
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 0.02em;
@@ -31,6 +52,27 @@
       margin-right: 8px;
       fill: $site-nav--link--location;
     }
+
+    &:hover {
+      span {
+        border-bottom: 1px dashed $site-nav--link--location;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      span {
+        border-bottom: 1px dashed $site-nav--link--location;
+      }
+    }
+  }
+
+  &--question {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: none;
+    letter-spacing: normal;
+    color: $site-nav--link--question;
   }
 }
 
@@ -38,7 +80,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 32px 0;
+  margin: 24px 32px;
 }
 
 .site-nav__inner {
@@ -75,4 +117,48 @@
 .site-location {
   display: flex;
   margin-left: 90px;
+}
+
+.site__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 32px;
+
+  ul {
+    @include list-drop;
+    display: flex;
+  }
+
+  li:not(:first-of-type) {
+    margin-left: 5px;
+  }
+}
+
+.site-nav__social {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+
+  &--instagram {
+    background-image: url("../img/social-instagram.svg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/social-instagram-hover.svg");
+    }
+  }
+
+  &--vk {
+    background-image: url("../img/social-vk.svg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/social-vk-hover.svg");
+    }
+  }
 }

@@ -1,0 +1,24 @@
+.btn {
+  display: block;
+  width: 250px;
+  padding: 20px;
+  font: inherit;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $btn--txt;
+  background-color: $btn--bg;
+  border: none;
+  border-radius: 32px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $btn--bg-hover;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
