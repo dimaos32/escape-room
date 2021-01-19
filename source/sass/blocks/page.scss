@@ -1,0 +1,18 @@
+.page {
+  font-family: $raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $page--txt;
+  background-color: $page--bg;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
+
+  &--block-scroll {
+    position: fixed;
+    overflow-y: scroll;
+  }
+}

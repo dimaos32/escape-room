@@ -1,0 +1,78 @@
+.site-nav {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+}
+
+.site-nav__link {
+  display: block;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $site-nav--link;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  &--quests {
+    color: $site-nav--link--quests;
+  }
+
+  &--location {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: $site-nav--link--location;
+
+    svg {
+      margin-right: 8px;
+      fill: $site-nav--link--location;
+    }
+  }
+}
+
+.site-nav__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 32px 0;
+}
+
+.site-nav__inner {
+  align-self: flex-start;
+}
+
+.site-nav__menu-btn {
+  display: none;
+}
+
+.site-nav__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.site-nav__main-nav {
+  max-width: 600px;
+  margin-left: 90px;
+
+  ul {
+    @include list-drop;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  li {
+    margin: 0 13px;
+  }
+}
+
+.site-location {
+  display: flex;
+  margin-left: 90px;
+}

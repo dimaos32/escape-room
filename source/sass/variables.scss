@@ -1,0 +1,42 @@
+// Colors
+
+$black: #000000;
+
+$black-almost:#1c1c1c;
+
+$white-dirty: #e5e5e5;
+$white-almost: #f0f0f0;
+
+$white: #ffffff;
+
+$site-dim: #d26d13;
+$site-darker: #f2890f;
+$site: #f28a0f;
+$site-lighter: #f2901d;
+$site-bright: #f39425;
+
+$accent: #13ba19;
+$accent-light: #2cdb52;
+
+// Fonts
+
+$raleway: "Raleway", "Verdana", sans-serif;
+
+// Viewports
+
+$mobile-width: 767px;
+$tablet-width: 1023px;
+$desktop-width-only: 1024px;
+
+// Blocks
+
+$page--txt: $white;
+$page--bg: $black-almost;
+
+
+$logo--color: white;
+$logo--color-hover: $site;
+
+$site-nav--link: $white-almost;
+$site-nav--link--quests: $white;
+$site-nav--link--location : $site-darker;
