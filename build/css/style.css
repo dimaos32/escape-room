@@ -106,10 +106,15 @@ img {
     font-size: 64px;
     line-height: 110%; }
   .invitation__inner p {
+    width: 470px;
     margin: 0;
     margin-bottom: 60px;
     font-size: 17px;
     color: #e6e6e6; }
+
+@media (max-width: 1023px) {
+  .invitation__inner {
+    margin-left: 90px; } }
 
 .logo {
   display: block;
@@ -150,21 +155,6 @@ img {
   .page--block-scroll {
     position: fixed;
     overflow-y: scroll; }
-
-.site-nav {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  height: 100%; }
 
 .site-nav__link {
   display: block;
@@ -214,6 +204,10 @@ img {
     color: #e6e6e6; }
 
 .site-nav__top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,7 +240,6 @@ img {
           align-items: center; }
 
 .site-nav__main-nav {
-  max-width: 600px;
   margin-left: 90px; }
   .site-nav__main-nav ul {
     margin: 0;
@@ -270,6 +263,10 @@ img {
   margin-left: 90px; }
 
 .site__bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,6 +303,15 @@ img {
     background-image: url("../img/social-vk.svg"); }
     .site-nav__social--vk:hover, .site-nav__social--vk:focus {
       background-image: url("../img/social-vk-hover.svg"); }
+
+@media (max-width: 1023px) {
+  .site-nav__main-nav {
+    margin-left: 60px; }
+    .site-nav__main-nav li {
+      margin: 0 8px; }
+  .site-nav__top,
+  .site__bottom {
+    margin: 20px 16px; } }
 
 .visually-hidden {
   position: absolute;

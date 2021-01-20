@@ -1,12 +1,3 @@
-.site-nav {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-}
-
 .site-nav__link {
   display: block;
   padding: 10px;
@@ -77,6 +68,10 @@
 }
 
 .site-nav__top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +94,6 @@
 }
 
 .site-nav__main-nav {
-  max-width: 600px;
   margin-left: 90px;
 
   ul {
@@ -120,6 +114,10 @@
 }
 
 .site__bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -160,5 +158,20 @@
     &:focus {
       background-image: url("../img/social-vk-hover.svg");
     }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .site-nav__main-nav {
+    margin-left: 60px;
+
+    li {
+      margin: 0 8px;
+    }
+  }
+
+  .site-nav__top,
+  .site__bottom {
+    margin: 20px 16px;
   }
 }

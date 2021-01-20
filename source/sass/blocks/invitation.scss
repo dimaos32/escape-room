@@ -18,9 +18,16 @@
   }
 
   p {
+    width: 470px;
     margin: 0;
     margin-bottom: 60px;
     font-size: 17px;
     color: $page--txt-alt;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .invitation__inner {
+    margin-left: 90px;
   }
 }
