@@ -65,3 +65,23 @@
     opacity: 0.6;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .modal {
+    z-index: 2;
+    background: $modal--bg;
+  }
+
+  .modal__content {
+    width: 100%;
+    margin: 0;
+    padding: 32px 16px;
+    height: max-content;
+    max-height: 100vh;
+    background: none;
+  }
+
+  .modal__close-btn {
+    right: 5px;
+  }
+}

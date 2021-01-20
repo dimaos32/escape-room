@@ -262,6 +262,10 @@ img {
     .modal-location__link:active span {
       border-bottom: 2px dashed #f2890f; }
 
+@media (max-width: 767px) {
+  .modal-location ul {
+    margin-bottom: 0; } }
+
 .modal {
   display: none; }
   .modal--opened {
@@ -314,6 +318,23 @@ img {
     background-color: #f2890f; }
   .modal__close-btn:active::before, .modal__close-btn:active::after {
     opacity: 0.6; }
+
+@media (max-width: 767px) {
+  .modal {
+    z-index: 2;
+    background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1f1d1d));
+    background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%); }
+  .modal__content {
+    width: 100%;
+    margin: 0;
+    padding: 32px 16px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    max-height: 100vh;
+    background: none; }
+  .modal__close-btn {
+    right: 5px; } }
 
 .page {
   min-width: 360px;
