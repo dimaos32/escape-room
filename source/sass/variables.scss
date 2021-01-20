@@ -18,6 +18,10 @@ $site-bright: #f39425;
 $accent: #13ba19;
 $accent-light: #2cdb52;
 
+// Gradients
+
+$gradient--mobile-menu: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
+
 // Fonts
 
 $raleway: "Raleway", "Verdana", sans-serif;
@@ -51,3 +55,5 @@ $site-nav--btn-txt: $white-almost;
 $site-nav--btn-txt-hover: $site-darker;
 $site-nav--btn-burger: $white;
 $site-nav--btn-burger-hover: $site-bright;
+$site-nav--gradient: $gradient--mobile-menu;
+$site-nav--decor: rgba($white, 0.16);

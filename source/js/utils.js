@@ -11,13 +11,15 @@
       document.body.classList.add('page--block-scroll');
     }
 
-    modal.classList.remove('modal--closed');
-    modal.classList.add('modal--opened');
+    if (modal.classList.contains('modal')) {
+      modal.classList.add('modal--opened');
+    }
   };
 
   var closeModal = function (modal) {
-    modal.classList.add('modal--closed');
-    modal.classList.remove('modal--opened');
+    if (modal.classList.contains('modal')) {
+      modal.classList.remove('modal--opened');
+    }
 
     if (document.body.offsetHeight > window.innerHeight) {
       document.body.classList.remove('page--block-scroll');
