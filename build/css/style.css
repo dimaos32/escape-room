@@ -280,8 +280,8 @@ img {
   max-height: calc(100vh - 64px);
   margin: auto;
   padding: 32px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1F1D1D));
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#1f1d1d));
+  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border-radius: 3px;
   overflow-y: auto; }
 
@@ -369,16 +369,21 @@ img {
     .site-nav__link--location svg {
       margin-right: 8px;
       fill: #f2890f; }
-    .site-nav__link--location:hover span {
-      border-bottom: 1px dashed #f2890f; }
     .site-nav__link--location:hover span, .site-nav__link--location:focus span {
       border-bottom: 1px dashed #f2890f; }
   .site-nav__link--question {
+    padding-bottom: 9px;
     font-weight: 500;
     font-size: 12px;
     text-transform: none;
     letter-spacing: normal;
     color: #e6e6e6; }
+    .site-nav__link--question span {
+      border-bottom: 1px dashed #e6e6e6; }
+    .site-nav__link--question:hover, .site-nav__link--question:focus {
+      color: #f2890f; }
+      .site-nav__link--question:hover span, .site-nav__link--question:focus span {
+        border-bottom: 1px dashed #f2890f; }
 
 .site-nav__top {
   position: fixed;
@@ -520,7 +525,8 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 20px; }
   .site-nav__menu-btn {
     position: relative;
     display: block;
@@ -577,8 +583,6 @@ img {
       right: 8px;
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); }
-  .site-nav__inner {
-    margin-bottom: 20px; }
   .site-nav__wrapper {
     display: none;
     -webkit-box-orient: vertical;
@@ -609,7 +613,13 @@ img {
     .site-nav__location .site-nav__link--location {
       font-size: 12px; }
   .site-nav__bottom {
-    display: none; } }
+    display: none; }
+    .site-nav__bottom li:not(:first-of-type) {
+      margin-left: 8px; }
+  .site-nav__social {
+    width: 44px;
+    height: 44px;
+    background-size: 36px 36px; } }
 
 @-webkit-keyframes open-menu {
   0% {

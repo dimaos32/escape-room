@@ -21,7 +21,7 @@ $accent-light: #2cdb52;
 // Gradients
 
 $gradient--mobile-menu: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
-$gradient--modal: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+$gradient--modal: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 
 // Fonts
 
@@ -65,6 +65,7 @@ $site-nav--link: $white-almost;
 $site-nav--link--quests: $white;
 $site-nav--link--location: $site-darker;
 $site-nav--link--question: $white-dirty;
+$site-nav--link--question-hover: $site-darker;
 $site-nav--btn-txt: $white-almost;
 $site-nav--btn-txt-hover: $site-darker;
 $site-nav--btn-burger: $white;

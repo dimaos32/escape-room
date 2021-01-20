@@ -44,12 +44,6 @@
       fill: $site-nav--link--location;
     }
 
-    &:hover {
-      span {
-        border-bottom: 1px dashed $site-nav--link--location;
-      }
-    }
-
     &:hover,
     &:focus {
       span {
@@ -59,11 +53,25 @@
   }
 
   &--question {
+    padding-bottom: 9px;
     font-weight: 500;
     font-size: 12px;
     text-transform: none;
     letter-spacing: normal;
     color: $site-nav--link--question;
+
+    span {
+      border-bottom: 1px dashed $site-nav--link--question;
+    }
+
+    &:hover,
+    &:focus {
+      color: $site-nav--link--question-hover;
+
+      span {
+        border-bottom: 1px dashed $site-nav--link--question-hover;
+      }
+    }
   }
 }
 
@@ -212,6 +220,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .site-nav__menu-btn {
@@ -287,10 +296,6 @@
     }
   }
 
-  .site-nav__inner {
-    margin-bottom: 20px;
-  }
-
   .site-nav__wrapper {
     display: none;
     flex-direction: column-reverse;
@@ -333,6 +338,16 @@
 
   .site-nav__bottom {
     display: none;
+
+    li:not(:first-of-type) {
+      margin-left: 8px;
+    }
+  }
+
+  .site-nav__social {
+    width: 44px;
+    height: 44px;
+    background-size: 36px 36px;
   }
 }
 
