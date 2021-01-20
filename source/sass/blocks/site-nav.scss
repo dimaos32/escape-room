@@ -7,7 +7,6 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: $site-nav--link;
-  font-feature-settings: "pnum" on, "lnum" on;
   outline: none;
 
   span {
@@ -226,18 +225,18 @@
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    font-feature-settings: "pnum" on, "lnum" on;
     color: $site-nav--btn-txt;
     background-color: transparent;
     border: none;
     outline: none;
+    cursor: pointer;
 
     &::before,
     &::after {
       content: "";
       position: absolute;
       background-color: $site-nav--btn-burger;
-      transition: all 0.2s ease;
+      transition: top 0.2s, width 0.2s, right 0.2s, transform 0.2s;
     }
 
     &::before {

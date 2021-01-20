@@ -21,6 +21,7 @@ $accent-light: #2cdb52;
 // Gradients
 
 $gradient--mobile-menu: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
+$gradient--modal: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
 
 // Fonts
 
@@ -44,7 +45,20 @@ $btn--bg: $site;
 $btn--bg-hover: $site-bright;
 
 
-$logo--color: white;
+$modal-location--txt: $white-dirty;
+$modal-location--link: rgba($white, 0.32);
+$modal-location--link-hover: $white;
+$modal-location--link-current: $white;
+$modal-location--link-decor: $site-darker;
+$modal-location--autodetect-link: $white-dirty;
+$modal-location--autodetect-icon: $site-darker;
+$modal-location--autodetect-decor: rgba($white, 0.5);
+
+$modal--bg: $gradient--modal;
+$modal--close-btn: rgba($white, 0.5);
+$modal--close-btn-hover: $site-darker;
+
+$logo--color: $white;
 $logo--color-hover: $site;
 
 $site-nav--link: $white-almost;
