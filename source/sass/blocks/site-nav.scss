@@ -182,11 +182,61 @@
     justify-content: space-between;
     width: 100%;
 
-    outline: 2px dashed darkblue;
+    outline: 1px dashed yellow;
   }
 
   .site-nav__menu-btn {
+    position: relative;
     display: block;
+    margin-right: -8px;
+    padding: 8px;
+    padding-right: 36px;
+    font: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $site-nav--btn-txt;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $site-nav--btn-burger;
+    }
+
+    &::before {
+      top: 11px;
+      right: 8px;
+      width: 20px;
+      height: 2px;
+      box-shadow: 0 12px $site-nav--btn-burger;
+    }
+
+    &::after {
+      top: 17px;
+      right: 12px;
+      width: 16px;
+      height: 2px;
+    }
+
+    &:hover {
+      color: $site-nav--btn-txt-hover;
+
+      &::before,
+      &::after {
+        background-color: $site-nav--btn-burger-hover;
+      }
+
+      &::before {
+        box-shadow: 0 12px $site-nav--btn-burger-hover;
+      }
+
+    }
   }
 
   .site-nav__wrapper {
