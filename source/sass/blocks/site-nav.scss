@@ -113,7 +113,7 @@
   margin-left: 90px;
 }
 
-.site__bottom {
+.site-nav__bottom {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -171,7 +171,29 @@
   }
 
   .site-nav__top,
-  .site__bottom {
+  .site-nav__bottom {
     margin: 20px 16px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .site-nav__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    outline: 2px dashed darkblue;
+  }
+
+  .site-nav__menu-btn {
+    display: block;
+  }
+
+  .site-nav__wrapper {
+    display: none;
+  }
+
+  .site-nav__bottom {
+    display: none;
   }
 }

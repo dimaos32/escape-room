@@ -3,6 +3,7 @@
   width: 250px;
   padding: 20px;
   font: inherit;
+  font-weight: 800;
   font-size: 17px;
   text-align: center;
   text-transform: uppercase;
@@ -20,5 +21,14 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .btn {
+    width: 185px;
+    padding: 13px;
+    font-size: 14px;
+    border-radius: 23px;
   }
 }
