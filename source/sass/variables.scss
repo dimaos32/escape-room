@@ -2,6 +2,7 @@
 
 $black: #000000;
 
+$black-night:#191818;
 $black-almost:#1c1c1c;
 
 $white-dirty: #e6e6e6;
@@ -44,6 +45,15 @@ $btn--txt: $white;
 $btn--bg: $site;
 $btn--bg-hover: $site-bright;
 
+
+$modal-feedback--label-txt: $white-dirty;
+$modal-feedback--input-bg: $black-night;
+$modal-feedback--input-border: rgba($white, 0.4);
+$modal-feedback--input-border-success: linear-gradient(to bottom, $accent-light 0%, $accent 100%);
+$modal-feedback--input-border-error: linear-gradient(to bottom, $site-lighter 0%, $site-dim 100%);
+$modal-feedback--input-title: rgba($white-dirty, 0.64);
+$modal-feedback--checkbox-bg: rgba($site-darker, 0.4);
+$modal-feedback--checkbox-bg-hover: $site-darker;
 
 $modal-location--txt: $white-dirty;
 $modal-location--link: rgba($white, 0.32);

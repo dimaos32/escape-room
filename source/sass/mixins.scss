@@ -3,3 +3,10 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin modal-header {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.2;
+}

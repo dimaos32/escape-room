@@ -15,6 +15,13 @@
   outline: none;
   cursor: pointer;
 
+  &--modal {
+    width: 220px;
+    padding: 13px;
+    font-size: 14px;
+    border-radius: 23px;
+  }
+
   &:hover,
   &:focus {
     background-color: $btn--bg-hover;
@@ -31,5 +38,9 @@
     padding: 13px;
     font-size: 14px;
     border-radius: 23px;
+
+    &--modal {
+      width: 220px;
+    }
   }
 }
