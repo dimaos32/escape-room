@@ -73,6 +73,7 @@
   position: relative;
   margin: 0;
   padding-left: 25px;
+  font-size: 14px;
 
   &::before {
     content: "";
@@ -94,5 +95,27 @@
   &:hover::before,
   input[type="checkbox"]:focus + &::before {
     background-color: $modal-feedback--checkbox-bg-hover;
+  }
+
+  a {
+    color: $modal-feedback--link;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $modal-feedback--link-hover;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal-feedback {
+    label {
+      margin-right: 8px;
+    }
   }
 }

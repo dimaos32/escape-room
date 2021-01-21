@@ -253,7 +253,8 @@ img {
 .modal-feedback__agreement {
   position: relative;
   margin: 0;
-  padding-left: 25px; }
+  padding-left: 25px;
+  font-size: 14px; }
   .modal-feedback__agreement::before {
     content: "";
     position: absolute;
@@ -270,6 +271,17 @@ img {
   .modal-feedback__agreement:hover::before,
   input[type="checkbox"]:focus + .modal-feedback__agreement::before {
     background-color: #f2890f; }
+  .modal-feedback__agreement a {
+    color: #e6e6e6;
+    text-decoration: underline; }
+    .modal-feedback__agreement a:hover, .modal-feedback__agreement a:focus {
+      color: #f2890f; }
+    .modal-feedback__agreement a:active {
+      opacity: 0.6; }
+
+@media (max-width: 767px) {
+  .modal-feedback label {
+    margin-right: 8px; } }
 
 .modal-location h2 {
   margin: 0;
@@ -354,7 +366,8 @@ img {
     margin-bottom: 0; } }
 
 .modal {
-  display: none; }
+  display: none;
+  background-color: rgba(61, 51, 51, 0.96); }
   .modal--opened {
     position: fixed;
     top: 0;

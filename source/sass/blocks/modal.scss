@@ -1,5 +1,6 @@
 .modal {
   display: none;
+  background-color: $modal--overlay;
 
   &--opened {
     position: fixed;
