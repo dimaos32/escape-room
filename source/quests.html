@@ -17,9 +17,9 @@
 <body class="page">
 
 <header class="site-nav">
-  <div class="site-nav__top">
+  <div class="site-nav__top site-nav__top--quests">
     <div class="site-nav__inner">
-      <a class="logo">
+      <a class="logo" href="index.html">
         <svg width="134" height="50" viewBox="0 0 134 52" xmlns="http://www.w3.org/2000/svg">
           <path d="M67.5065 21.5227V23.8353H56.1353V7.25H67.2963V9.5626H58.7504V14.2812H66.1522V16.4537H58.7504V21.5227H67.5065Z" fill="white"/>
           <path d="M74.177 24.0689C73.1963 24.0689 72.2156 23.9132 71.2349 23.6017C70.2698 23.2747 69.437 22.8153 68.7365 22.2235L69.7639 20.5883C70.4955 21.1178 71.2194 21.5227 71.9354 21.803C72.6515 22.0678 73.3831 22.2002 74.1303 22.2002C74.893 22.2002 75.4923 22.0522 75.9282 21.7563C76.3796 21.4604 76.6053 21.04 76.6053 20.4949C76.6053 19.981 76.3563 19.6072 75.8581 19.3736C75.36 19.14 74.5817 18.8831 73.5232 18.6028C72.7604 18.4003 72.1066 18.2057 71.5618 18.0188C71.017 17.8319 70.5734 17.6139 70.2309 17.3647C69.8884 17.1155 69.6394 16.8274 69.4837 16.5004C69.328 16.1734 69.2502 15.7763 69.2502 15.3091C69.2502 14.6861 69.367 14.1333 69.6005 13.6505C69.8495 13.1678 70.1842 12.7629 70.6045 12.4358C71.0403 12.0932 71.5463 11.8363 72.1222 11.665C72.6982 11.4937 73.3208 11.408 73.9902 11.408C74.9086 11.408 75.7647 11.5482 76.5586 11.8285C77.3525 12.1088 78.0608 12.5137 78.6834 13.0432L77.586 14.5849C76.4497 13.6817 75.2433 13.2301 73.9668 13.2301C73.313 13.2301 72.7604 13.3702 72.309 13.6505C71.8731 13.9153 71.6552 14.3435 71.6552 14.9353C71.6552 15.1845 71.7019 15.3947 71.7953 15.566C71.8887 15.7373 72.0366 15.8853 72.239 16.0099C72.4569 16.1344 72.7293 16.2512 73.0562 16.3602C73.3986 16.4537 73.8189 16.5627 74.3171 16.6873C75.1421 16.8897 75.8504 17.0922 76.4419 17.2946C77.049 17.4971 77.5471 17.7385 77.9362 18.0188C78.3254 18.2835 78.6134 18.6028 78.8002 18.9765C78.987 19.3347 79.0804 19.7708 79.0804 20.2847C79.0804 21.4526 78.6367 22.3792 77.7494 23.0645C76.8777 23.7341 75.6869 24.0689 74.177 24.0689Z" fill="white"/>
@@ -47,7 +47,7 @@
     <div class="site-nav__wrapper">
       <nav class="site-nav__main-nav">
         <ul>
-          <li><a class="site-nav__link site-nav__link--quests" href="quests.html">
+          <li><a class="site-nav__link site-nav__link--quests">
             <span>Квесты</span>
           </a></li>
 
@@ -101,16 +101,535 @@
   </div>
 </header>
 
-<section class="invitation">
-  <div class="invitation__inner">
-    <h1>Лучшие квесты в Новосибирске</h1>
+<h1 class="visually-hidden">Выберите тематику</h1>
 
-    <p>
-      Надоело проводить свободное время лёжа на диване?  Игровые площадки questroom на целый час погружают вас  в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!
-    </p>
+<section class="quests">
+  <h2>квесты в Новосибирске</h2>
 
-    <a href="quests.html" class="btn">Выбрать квест</a>
+  <p>Выберите тематику</p>
+
+  <div class="quests__filter">
+    <ul>
+      <li><a class="quests__filter-link quests__filter-link--all quests__filter-link--current" href="#">
+        <svg width="26" height="30" viewbox="0 0 26 30">
+          <use xlink:href="img/sprite_auto.svg#icon-type-all"></use>
+        </svg>
+        <span>Все квесты</span>
+      </a></li>
+
+      <li><a class="quests__filter-link quests__filter-link--adventures" href="#">
+        <svg width="36" height="30" viewbox="0 0 36 30">
+          <use xlink:href="img/sprite_auto.svg#icon-type-adventures"></use>
+        </svg>
+        <span>Приключения</span>
+      </a></li>
+
+      <li><a class="quests__filter-link quests__filter-link--horror" href="#">
+        <svg width="30" height="30" viewbox="0 0 30 30">
+          <use xlink:href="img/sprite_auto.svg#icon-type-horror"></use>
+        </svg>
+        <span>Ужасы</span>
+      </a></li>
+
+      <li><a class="quests__filter-link quests__filter-link--mystic" href="#">
+        <svg width="30" height="30" viewbox="0 0 30 30">
+          <use xlink:href="img/sprite_auto.svg#icon-type-mystic"></use>
+        </svg>
+        <span>Мистика</span>
+      </a></li>
+
+      <li><a class="quests__filter-link quests__filter-link--detective" href="#">
+        <svg width="40" height="30" viewbox="0 0 40 30">
+          <use xlink:href="img/sprite_auto.svg#icon-type-detective"></use>
+        </svg>
+        <span>Детектив</span>
+      </a></li>
+
+      <li><a class="quests__filter-link quests__filter-link--scifi" href="#">
+        <svg width="28" height="30" viewbox="0 0 28 30">
+          <use xlink:href="img/sprite_auto.svg#icon-type-scifi"></use>
+        </svg>
+        <span>Sci-fi</span>
+      </a></li>
+    </ul>
   </div>
+
+  <ul class="quests__list">
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Склеп</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/crypt-cover@1x.webp 1x, img/quests/crypt-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/crypt-cover@1x.jpg"
+              srcset="img/quests/crypt-cover@2x.jpg 2x"
+              width="344"
+              alt="Узник в клетке в старом замке">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>
+            пр. Ленина, 37
+          </address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              2–5 чел
+            </li>
+
+            <li>
+              <svg width="14" height="14" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
+              </svg>
+              сложный
+            </li>
+          </ul>
+
+          <div class="badge badge--hit">
+            <svg width="16" height="16" viewbox="0 0 14 14">
+              <use xlink:href="img/sprite_auto.svg#icon-star"></use>
+            </svg>
+            Хит
+          </div>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Маньяк</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/maniac-cover@1x.webp 1x, img/quests/maniac-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/maniac-cover@1x.jpg"
+              srcset="img/quests/maniac-cover@2x.jpg 2x"
+              width="344"
+              alt="Человек в маске в катакомбах">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>Верхнетецкая, 32</address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              3–6 чел
+            </li>
+
+            <li class="quest-card__options quest-card__options--difficulty">
+              средний
+            </li>
+          </ul>
+
+          <div class="badge badge--hit">
+            <svg width="16" height="16" viewbox="0 0 14 14">
+              <use xlink:href="img/sprite_auto.svg#icon-star"></use>
+            </svg>
+            Хит
+          </div>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Ритуал</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/ritual-cover@1x.webp 1x, img/quests/ritual-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/ritual-cover@1x.jpg"
+              srcset="img/quests/ritual-cover@2x.jpg 2x"
+              width="344"
+              alt="Подсвечник из черепа">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>пр. Ленина, 37</address>
+
+          <ul>
+            <li>
+              <svg width="16" height="16" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              3–5 чел
+            </li>
+
+            <li class="quest-card__options quest-card__options--difficulty">
+              легкий
+            </li>
+          </ul>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>История призраков</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/ghost-story-cover@1x.webp 1x, img/quests/ghost-story-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/ghost-story-cover@1x.jpg"
+              srcset="img/quests/ghost-story-cover@2x.jpg 2x"
+              width="344"
+              alt="Призрак за стеклом">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>Новослободская, 2а</address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              5–6 чел
+            </li>
+
+            <li>
+              <svg width="16" height="16" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
+              </svg>
+              легкий
+            </li>
+          </ul>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Тайны старого особняка</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/old-mansion-secrets-cover@1x.webp 1x, img/quests/old-mansion-secrets-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/old-mansion-secrets-cover@1x.jpg"
+              srcset="img/quests/old-mansion-secrets-cover@2x.jpg 2x"
+              width="344"
+              alt="Мрачный особняк в сумерках">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>пр. Ленина, 37</address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              2–5 чел
+            </li>
+
+            <li>
+              <svg width="16" height="16" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
+              </svg>
+              легкий
+            </li>
+          </ul>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Хижина в лесу</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/shed-in-a-woods-cover@1x.webp 1x, img/quests/shed-in-a-woods-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/shed-in-a-woods-cover@1x.jpg"
+              srcset="img/quests/shed-in-a-woods-cover@2x.jpg 2x"
+              width="344"
+              alt="Чернокнижник с козлинным черепом в руках в лесу среди тыкв и свечей">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>Верхнетецкая, 32</address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              4–7 чел
+            </li>
+
+            <li>
+              <svg width="16" height="16" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
+              </svg>
+              средний
+            </li>
+          </ul>
+
+          <div class="badge badge--hit">
+            <svg width="16" height="16" viewbox="0 0 14 14">
+              <use xlink:href="img/sprite_auto.svg#icon-star"></use>
+            </svg>
+            Хит
+          </div>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Фатальный эксперимент</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/fatal-experiment-cover@1x.webp 1x, img/quests/fatal-experiment-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/fatal-experiment-cover@1x.jpg"
+              srcset="img/quests/fatal-experiment-cover@2x.jpg 2x"
+              width="344"
+              alt="Заброшенное помещение фабрики">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>Верхнетецкая, 32</address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              5–8 чел
+            </li>
+
+            <li>
+              <svg width="16" height="16" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
+              </svg>
+              сложный
+            </li>
+          </ul>
+
+          <div class="badge badge--hit">
+            <svg width="16" height="16" viewbox="0 0 14 14">
+              <use xlink:href="img/sprite_auto.svg#icon-star"></use>
+            </svg>
+            Хит
+          </div>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Метро 2033</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/metro-2033-cover@1x.webp 1x, img/quests/metro-2033-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/metro-2033-cover@1x.jpg"
+              srcset="img/quests/metro-2033-cover@2x.jpg 2x"
+              width="344"
+              alt="Человек в мрачном подвале">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>Новослободская, 2а</address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              6–8 чел
+            </li>
+
+            <li>
+              <svg width="16" height="16" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
+              </svg>
+              средний
+            </li>
+          </ul>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Старый чердак</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/old-attic-cover@1x.webp 1x, img/quests/old-attic-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/old-attic-cover@1x.jpg"
+              srcset="img/quests/old-attic-cover@2x.jpg 2x"
+              width="344"
+              alt="Молескин, карандаш, очки, лупа,фотографии и пленочный фотоаппарат лежат на карте на столе">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>Новослободская, 2а</address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              2–3 чел
+            </li>
+
+            <li>
+              <svg width="16" height="16" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
+              </svg>
+              легкий
+            </li>
+          </ul>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Последний рубеж</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/last-frontier-cover@1x.webp 1x, img/quests/last-frontier-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/last-frontier-cover@1x.jpg"
+              srcset="img/quests/last-frontier-cover@2x.jpg 2x"
+              width="344"
+              alt="Узник в клетке в старом замке">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>Верхнетецкая, 32</address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              4–7 чел
+            </li>
+
+            <li>
+              <svg width="16" height="16" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
+              </svg>
+              средний
+            </li>
+          </ul>
+        </a>
+      </article>
+    </li>
+
+    <li>
+      <article class="quest-card">
+        <a href="#">
+          <h3>Марс-2056</h3>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/quests/mars-2056-cover@1x.webp 1x, img/quests/mars-2056-cover@2x.webp 2x">
+            <!-- 1х: 344px; 2x: 688px -->
+            <img
+              src="img/quests/mars-2056-cover@1x.jpg"
+              srcset="img/quests/mars-2056-cover@2x.jpg 2x"
+              width="344"
+              alt="Узник в клетке в старом замке">
+          </picture>
+
+          <address>
+            <svg width="11" height="14" viewbox="0 0 16 21">
+              <use xlink:href="img/sprite_auto.svg#icon-location"></use>
+            </svg>пр. Ленина, 37</address>
+
+          <ul>
+            <li>
+              <svg width="11" height="14" viewbox="0 0 11 14">
+                <use xlink:href="img/sprite_auto.svg#icon-person"></use>
+              </svg>
+              2–4 чел
+            </li>
+
+            <li>
+              <svg width="16" height="16" viewbox="0 0 14 14">
+                <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
+              </svg>
+              легкий
+            </li>
+          </ul>
+        </a>
+      </article>
+    </li>
+  </ul>
 </section>
 
 <section class="modal modal--location">

@@ -48,6 +48,10 @@ $btn--bg: $site;
 $btn--bg-hover: $site-bright;
 
 
+$badge--hit-txt: $white-dirty;
+$badge--hit-icon: $site-darker;
+$badge--hit-border: rgba($site-darker, 0.74);
+
 $modal-feedback--label-txt: $white-dirty;
 $modal-feedback--input-bg: $black-night;
 $modal-feedback--input-border: rgba($white, 0.4);
@@ -75,6 +79,22 @@ $modal--close-btn-hover: $site-darker;
 
 $logo--color: $white;
 $logo--color-hover: $site;
+
+$quest-card--img-bg: $black-almost;
+$quest-card--header: white;
+$quest-card--address: $white-dirty;
+$quest-card--address-icon: $site-darker;
+$quest-card--options: rgba($white-dirty, 0.8);
+$quest-card--options-icon: $white;
+$quest-card--options-decor: rgba($white, 0.5);
+
+$quests--title: $site-darker;
+$quests--filter-decor: rgba($white, 0.32);
+$quests--filter-link: $white-dirty;
+$quests--filter-link-hover: $site-darker;
+$quests--filter-link-icon: $white;
+$quests--filter-link-icon-hover: $site-darker;
+$quests--filter-link-decor: $site-darker;
 
 $site-nav--link: $white-almost;
 $site-nav--link--quests: $white;

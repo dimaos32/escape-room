@@ -1,0 +1,20 @@
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 3px 12px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: $badge--hit-txt;
+  border: 2px solid $badge--hit-border;
+  border-radius: 14px;
+
+  svg {
+    display: block;
+    margin-right: 2px;
+    width: 14px;
+    height: 14px;
+    fill: $badge--hit-icon;
+  }
+}

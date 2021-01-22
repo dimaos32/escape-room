@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "global.scss";
 @import "mixins.scss";
+@import "blocks/badge.scss";
 @import "blocks/btn.scss";
 @import "blocks/container.scss";
 @import "blocks/invitation.scss";
@@ -10,5 +11,7 @@
 @import "blocks/modal-location.scss";
 @import "blocks/modal.scss";
 @import "blocks/page.scss";
+@import "blocks/quest-card.scss";
+@import "blocks/quests.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/visually-hidden.scss";

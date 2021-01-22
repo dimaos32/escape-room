@@ -87,7 +87,7 @@
   }
 
   input[type="checkbox"]:checked + &::before {
-    background-image: url("../../img/icon-checked.svg");
+    background-image: url("../img/icon-checked.svg");
     background-position: center;
     background-repeat: no-repeat;
   }

@@ -80,10 +80,15 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 32px;
+  padding: 24px 32px;
+
+  &--quests {
+    background-color: $page--bg;
+  }
 }
 
 .site-nav__inner {
@@ -171,14 +176,17 @@
 
 @media (max-width: $tablet-width) {
   .site-nav__main-nav {
-    margin-left: 60px;
+    margin-left: 40px;
 
     li {
-      margin: 0 8px;
+      margin: 0 3px;
     }
   }
 
-  .site-nav__top,
+  .site-nav__top {
+    padding: 20px 16px;
+  }
+
   .site-nav__bottom {
     margin: 20px 16px;
   }
@@ -204,6 +212,10 @@
 
       .site-nav__top {
         display: block;
+
+        &--quests {
+          background-color: transparent;
+        }
       }
 
       .site-nav__wrapper {
