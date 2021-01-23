@@ -9,7 +9,7 @@
     flex-direction: column;
     width: 100%;
     padding: 20px;
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
     outline: none;
 
     &:hover {
@@ -21,11 +21,11 @@
     }
 
     &:active {
-      transform: rotate(365deg) scale(0);
+      opacity: 0.6;
     }
   }
 
-  h3 {
+  h2 {
     margin: auto 0 12px;
     font-weight: 700;
     font-size: 24px;

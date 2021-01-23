@@ -4,6 +4,7 @@ $black: #000000;
 
 $black-night:#191818;
 $black-almost:#1c1c1c;
+$black-coal: #23150E;
 
 $grey-dark: #3d3333;
 
@@ -25,6 +26,7 @@ $accent-light: #2cdb52;
 
 $gradient--mobile-menu: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
 $gradient--modal: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
+$gradient--quest: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%);
 
 // Fonts
 
@@ -34,7 +36,6 @@ $raleway: "Raleway", "Verdana", sans-serif;
 
 $mobile-width: 767px;
 $tablet-width: 1023px;
-$desktop-width-only: 1024px;
 
 // Blocks
 
@@ -87,6 +88,15 @@ $quest-card--address-icon: $site-darker;
 $quest-card--options: rgba($white-dirty, 0.8);
 $quest-card--options-icon: $white;
 $quest-card--options-decor: rgba($white, 0.5);
+
+$quest--genre: $site-darker;
+$quest--title: $white;
+$quest--link: $white-dirty;
+$quest--link-hover: $site-darker;
+$quest--txt: $white-dirty;
+$quest--bg: $black-coal;
+$quest--options-icon: $white;
+$quest--options-decor: rgba($white, 0.36);
 
 $quests--title: $site-darker;
 $quests--filter-decor: rgba($white, 0.32);
