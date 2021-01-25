@@ -38,6 +38,56 @@
   }
 }
 
+.order__quest {
+  position: relative;
+  display: none;
+  margin: -10px;
+  margin-bottom: 24px;
+  padding: 10px;
+  padding-left: 24px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: $quest--link;
+
+  &:hover,
+  &:focus {
+    color: $quest--link-hover;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 9px;
+    height: 1px;
+    background-color: $quest--link;
+    transform-origin: left center;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(40deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(-40deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $quest--link-hover;
+  }
+}
+
 .order__date {
   display: flex;
   align-items: center;
@@ -98,11 +148,17 @@
     position: relative;
     margin-right: 24px;
     padding-left: 20px;
+    font-size: 12px;
+    color: $order--legend-txt;
+
+    &:last-of-type {
+      padding-left: 0;
+    }
 
     &::before {
       content: "";
       position: absolute;
-      top: 4px;
+      top: 2px;
       left: 0;
       width: 15px;
       height: 15px;
@@ -116,7 +172,7 @@
     }
 
     &:nth-of-type(3)::before {
-      border-color: none;
+      border: none;
       background: $order--legend-selected;
     }
   }
@@ -125,8 +181,9 @@
 .order__time {
   @include list-drop;
   display: grid;
-  grid-template-columns: repeat(6, max-content);
+  grid-template-columns: repeat(auto-fill, 110px);
   gap: 32px 24px;
+  max-width: 780px;
   margin-left: 45px;
 
   label {
@@ -170,5 +227,35 @@
 
   input:not(:disabled):active + label {
     opacity: 0.6;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .order {
+    padding: 140px 90px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .order {
+    padding: 90px 16px;
+
+    h1 {
+      margin-bottom: 40px;
+      padding-bottom: 12px;
+      font-size: 40px;
+      line-height: 1.1;
+      letter-spacing: normal;
+    }
+  }
+
+  .order__quest {
+    display: block;
+  }
+
+  .order__date,
+  .order__legend,
+  .order__time {
+    margin-left: 0;
   }
 }

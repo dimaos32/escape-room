@@ -493,6 +493,41 @@ img {
     text-transform: none;
     color: #f2890f; }
 
+.order__quest {
+  position: relative;
+  display: none;
+  margin: -10px;
+  margin-bottom: 24px;
+  padding: 10px;
+  padding-left: 24px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #e6e6e6; }
+  .order__quest:hover, .order__quest:focus {
+    color: #f2890f; }
+  .order__quest:active {
+    opacity: 0.6; }
+  .order__quest::before, .order__quest::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 9px;
+    height: 1px;
+    background-color: #e6e6e6;
+    -webkit-transform-origin: left center;
+            transform-origin: left center; }
+  .order__quest::before {
+    -webkit-transform: translateY(-50%) rotate(40deg);
+            transform: translateY(-50%) rotate(40deg); }
+  .order__quest::after {
+    -webkit-transform: translateY(-50%) rotate(-40deg);
+            transform: translateY(-50%) rotate(-40deg); }
+  .order__quest:hover::before, .order__quest:hover::after, .order__quest:focus::before, .order__quest:focus::after {
+    background-color: #f2890f; }
+
 .order__date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,11 +579,15 @@ img {
   .order__legend li {
     position: relative;
     margin-right: 24px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.82); }
+    .order__legend li:last-of-type {
+      padding-left: 0; }
     .order__legend li::before {
       content: "";
       position: absolute;
-      top: 4px;
+      top: 2px;
       left: 0;
       width: 15px;
       height: 15px;
@@ -558,7 +597,7 @@ img {
       border: none;
       background: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%); }
     .order__legend li:nth-of-type(3)::before {
-      border-color: none;
+      border: none;
       background: -webkit-gradient(linear, left top, left bottom, from(#2cdb52), to(#13ba19));
       background: linear-gradient(to bottom, #2cdb52 0%, #13ba19 100%); }
 
@@ -567,9 +606,9 @@ img {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(6, -webkit-max-content);
-  grid-template-columns: repeat(6, max-content);
+  grid-template-columns: repeat(auto-fill, 110px);
   gap: 32px 24px;
+  max-width: 780px;
   margin-left: 45px; }
   .order__time label {
     display: block;
@@ -606,6 +645,26 @@ img {
     border: 2px solid #f28a0f; }
   .order__time input:not(:disabled):active + label {
     opacity: 0.6; }
+
+@media (max-width: 1023px) {
+  .order {
+    padding: 140px 90px; } }
+
+@media (max-width: 767px) {
+  .order {
+    padding: 90px 16px; }
+    .order h1 {
+      margin-bottom: 40px;
+      padding-bottom: 12px;
+      font-size: 40px;
+      line-height: 1.1;
+      letter-spacing: normal; }
+  .order__quest {
+    display: block; }
+  .order__date,
+  .order__legend,
+  .order__time {
+    margin-left: 0; } }
 
 .page {
   min-width: 360px;
