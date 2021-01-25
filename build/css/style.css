@@ -146,7 +146,7 @@ img {
   .invitation__inner p {
     width: 470px;
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     font-size: 17px;
     color: #e6e6e6; }
 
@@ -168,7 +168,7 @@ img {
     width: 100%;
     margin: auto 16px 65px; }
     .invitation__inner h1 {
-      width: 325px;
+      width: 300px;
       margin: 0 auto 32px;
       font-weight: 800;
       font-size: 36px;
@@ -1160,13 +1160,15 @@ img {
     .site-nav__link--location:hover span, .site-nav__link--location:focus span {
       border-bottom: 1px dashed #f2890f; }
   .site-nav__link--question {
-    padding-bottom: 9px;
+    margin-right: -10px;
+    padding-bottom: 7px;
     font-weight: 500;
     font-size: 12px;
     text-transform: none;
     letter-spacing: normal;
     color: #e6e6e6; }
     .site-nav__link--question span {
+      padding-bottom: 2px;
       border-bottom: 1px dashed #e6e6e6; }
     .site-nav__link--question:hover, .site-nav__link--question:focus {
       color: #f2890f; }
@@ -1235,7 +1237,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 90px; }
+  margin-left: 80px;
+  margin-right: -5px; }
 
 .site-nav__bottom {
   position: fixed;
@@ -1252,7 +1255,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 24px 32px; }
+  margin: 18px 32px; }
   .site-nav__bottom ul {
     margin: 0;
     padding: 0;
@@ -1292,10 +1295,13 @@ img {
     .site-nav__top li:not(:first-of-type) {
       margin-left: 8px; }
   .site-nav__bottom {
-    margin: 20px 16px; }
+    margin: 30px 16px; }
+    .site-nav__bottom li:not(:first-of-type) {
+      margin-left: 12px; }
   .site-nav__social {
     width: 44px;
     height: 44px;
+    margin-left: -4px;
     background-size: 36px 36px; } }
 
 @media (max-width: 767px) {
@@ -1329,7 +1335,7 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
   .site-nav__menu-btn {
     position: relative;
     display: block;
@@ -1400,7 +1406,7 @@ img {
     .site-nav__main-nav ul {
       display: block; }
     .site-nav__main-nav li {
-      margin-bottom: 20px; }
+      margin-bottom: 15px; }
     .site-nav__main-nav a {
       margin: 0 auto; }
   .site-nav__location {
@@ -1408,7 +1414,7 @@ img {
     width: 100%;
     margin: 0;
     margin-bottom: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.16); }
     .site-nav__location a {
       margin: 0 auto;
