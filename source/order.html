@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Лучшие квесты в Новосибирске - более 10 игровых площадок. Каждый квест уникален.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Escape Room | Ритуал</title>
+  <title>Escape Room | Заказ квеста</title>
   <link rel="preload" href="fonts/raleway-400.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/raleway-500.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/raleway-600.woff2" as="font" crossorigin="anonymous">
@@ -101,60 +101,115 @@
   </div>
 </header>
 
-<section class="quest">
+<section class="order">
   <picture>
     <source
       media="(max-width: 767px)"
       type="image/webp"
-      srcset="img/quests/fatal-experiment-mobile@1x.webp 1x, img/quests/fatal-experiment-mobile@2x.webp 2x">
+      srcset="img/quests/maniac-mobile@1x.webp 1x, img/quests/maniac-mobile@2x.webp 2x">
     <source
       type="image/webp"
-      srcset="img/quests/fatal-experiment-desktop@1x.webp 1x, img/quests/fatal-experiment-desktop@2x.webp 2x">
+      srcset="img/quests/maniac-desktop@1x.webp 1x, img/quests/maniac-desktop@2x.webp 2x">
       <source
         media="(max-width: 767px)"
-        srcset="img/quests/fatal-experiment-mobile@1x.jpg 1x, img/quests/fatal-experiment-mobile@2x.jpg 2x">
+        srcset="img/quests/maniac-mobile@1x.jpg 1x, img/quests/maniac-mobile@2x.jpg 2x">
     <!-- 1х: 1366px; 2x: 2732px -->
     <img
-      src="img/quests/fatal-experiment-desktop@1x.jpg"
-      srcset="img/quests/fatal-experiment-desktop@2x.jpg 2x"
+      src="img/quests/maniac-desktop@1x.jpg"
+      srcset="img/quests/maniac-desktop@2x.jpg 2x"
       width="1366" height="768"
       alt="Человек в маске в катакомбах">
   </picture>
 
-  <div class="quest__wrapper">
-    <a class="quest__quests" href="quests.html">Все квесты</a>
+  <h1>
+    <span>выбранный квест</span>
+    Маньяк
+  </h1>
 
-    <p class="quest__genre">приключение, детектив</p>
-
-    <h2>Фатальный эксперимент</h2>
-
-    <ul>
-      <li>
-        <svg width="24" height="24" viewbox="0 0 14 14">
-          <use xlink:href="img/sprite_auto.svg#icon-clock"></use>
-        </svg>
-        90 мин
-      </li>
-
-      <li>
-        <svg width="19" height="24" viewbox="0 0 11 14">
-          <use xlink:href="img/sprite_auto.svg#icon-person"></use>
-        </svg>
-        5–8 чел
-      </li>
-
-      <li>
-        <svg width="24" height="24" viewbox="0 0 14 14">
-          <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
-        </svg>
-        высокая сложность
-      </li>
-    </ul>
-
-    <p class="quest__descr">Вы стоите на пороге нового научного открытия, которое перевернет судьбу человечества. Но что-то идёт не так, и ядерный реактор, который работает на полную мощность, сигнализирует о скорой поломке. Удастя ли вам починить его в отведенное времяи предотвратить гибель людей в этом фатальном эксперимете?</p>
-
-    <a class="btn btn quest__btn" href="order.html">Забронировать</a>
+  <div class="order__date">
+    <a href="#">Выберите дату</a>
+    <time 2021-03-22">22 марта</time>
   </div>
+
+  <ul class="order__legend">
+    <li>— сводобно</li>
+    <li>— занято</li>
+    <li>— выбрано вами</li>
+  </ul>
+
+  <ul class="order__time">
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time0945">
+      <label for="time0945">9:45</label>
+      <p>1400 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time1100">
+      <label for="time1100">11:00</label>
+      <p>1400 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time1215" disabled>
+      <label for="time1215">12:15</label>
+      <p>1400 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time1330" disabled>
+      <label for="time1330">13:30</label>
+      <p>1400 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time1445">
+      <label for="time1445">14:45</label>
+      <p>1400 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time1600">
+      <label for="time1600">16:00</label>
+      <p>1500 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time1715" disabled>
+      <label for="time1715">17:15</label>
+      <p>1500 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time1830">
+      <label for="time1830">18:30</label>
+      <p>1500 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time1945">
+      <label for="time1945">19:45</label>
+      <p>1500 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time2100">
+      <label for="time2100">21:00</label>
+      <p>1800 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time2215" disabled>
+      <label for="time2215">22:15</label>
+      <p>1800 ₽</p>
+    </li>
+
+    <li>
+      <input class="visually-hidden" type="radio" name="time" id="time2330" disabled>
+      <label for="time2330">23:30</label>
+      <p>2000 ₽</p>
+    </li>
+  </ul>
 </section>
 
 <section class="modal modal--location">

@@ -7,6 +7,7 @@ $black-almost:#1c1c1c;
 $black-coal: #23150e;
 
 $grey-dark: #3d3333;
+$grey-light: #c4c4c4;
 
 $white-dirty: #e6e6e6;
 $white-almost: #f0f0f0;
@@ -27,6 +28,7 @@ $accent-light: #2cdb52;
 $gradient--mobile-menu: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
 $gradient--modal: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
 $gradient--quest: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%);
+$gradient--order-orange: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
 
 // Fonts
 
@@ -80,6 +82,17 @@ $modal--close-btn-hover: $site-darker;
 
 $logo--color: $white;
 $logo--color-hover: $site;
+
+$order--pre-title: $site-darker;
+$order--title: $white;
+$order--title-decor: rgba($white-dirty, 0.25);
+$order--link: $white;
+$order--link-hover: $site-darker;
+$order--link-decor: $site-darker;
+$order--legend-free: $grey-light;
+$order--legend-ordered: $gradient--order-orange;
+$order--legend-selected: linear-gradient(to bottom, $accent-light 0%, $accent 100%);
+$order--input-hover: $site;
 
 $quest-card--img-bg: $black-almost;
 $quest-card--header: white;
