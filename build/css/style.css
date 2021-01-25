@@ -65,8 +65,8 @@ img {
 .badge {
   position: absolute;
   top: 15px;
-  right: 15px;
-  padding: 3px 12px;
+  right: 16px;
+  padding: 3px 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,6 +303,8 @@ img {
 
 @media (max-width: 767px) {
   .modal-feedback label {
+    margin-right: 8px; }
+  .modal-feedback__input {
     margin-right: 8px; } }
 
 .modal-location h2 {
@@ -326,7 +328,7 @@ img {
   list-style: none;
   margin-bottom: 10px; }
 
-.modal-autodetect {
+.modal-location__autodetect {
   display: block;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -338,19 +340,19 @@ img {
   font-size: 17px;
   line-height: 1.6;
   color: #e6e6e6; }
-  .modal-autodetect svg {
+  .modal-location__autodetect svg {
     display: inline-block;
     vertical-align: middle;
     fill: #f2890f; }
-  .modal-autodetect span {
+  .modal-location__autodetect span {
     display: inline-block;
     vertical-align: middle;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
-  .modal-autodetect:hover, .modal-autodetect:active {
+  .modal-location__autodetect:hover, .modal-location__autodetect:active {
     color: #ffffff; }
-    .modal-autodetect:hover span, .modal-autodetect:active span {
+    .modal-location__autodetect:hover span, .modal-location__autodetect:active span {
       border-bottom-style: dashed; }
-  .modal-autodetect:active {
+  .modal-location__autodetect:active {
     opacity: 0.6; }
 
 .modal-location__link {
@@ -394,6 +396,7 @@ img {
     position: fixed;
     top: 0;
     bottom: 0;
+    z-index: 13;
     left: 0;
     right: 0;
     display: -webkit-box;
@@ -714,7 +717,7 @@ img {
     .quest-card a:active {
       opacity: 0.6; }
   .quest-card h2 {
-    margin: auto 0 12px;
+    margin: auto 0 10px;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.2;
@@ -739,7 +742,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
     font-style: normal;
     font-size: 13px;
     color: #e6e6e6; }
@@ -781,8 +784,8 @@ img {
       height: 16px;
       fill: #ffffff; }
     .quest-card li:first-of-type svg {
-      width: 11px;
-      height: 14px;
+      width: 13px;
+      height: 16px;
       fill: none;
       stroke: #ffffff; }
 
@@ -984,7 +987,7 @@ img {
     color: #f2890f; }
   .quests p {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-weight: 800;
     font-size: 64px;
     line-height: 1.1; }
@@ -1003,7 +1006,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: -31px;
+    margin-left: -41px;
     margin-right: -50px; }
   .quests__filter li {
     -ms-flex-negative: 0;
@@ -1020,7 +1023,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: -10px;
-  padding: 10px;
+  padding: 15px 10px;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: #e6e6e6;
@@ -1068,9 +1072,10 @@ img {
   .quests {
     margin: 120px 95px; }
     .quests h1 {
-      margin-bottom: 8px; }
+      margin-top: -4px;
+      margin-bottom: 12px; }
     .quests p {
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       font-size: 36px; }
   .quests__filter {
     overflow-x: auto; }
@@ -1105,9 +1110,7 @@ img {
     .quests__filter-link:hover svg, .quests__filter-link:focus svg {
       fill: #f2890f; }
   .quests__filter-link:active {
-    opacity: 0.6; } }
-
-@media (max-width: 1023px) {
+    opacity: 0.6; }
   .quests__list {
     grid-template-columns: repeat(2, 1fr); } }
 
@@ -1116,6 +1119,7 @@ img {
     margin: 90px 16px; }
   .quests__list {
     grid-template-columns: repeat(1, minmax(328px, 344px));
+    gap: 16px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; } }
@@ -1336,6 +1340,8 @@ img {
             justify-content: space-between;
     width: 100%;
     margin-bottom: 30px; }
+    .site-nav__top--quests .site-nav__inner {
+      margin-bottom: 0; }
   .site-nav__menu-btn {
     position: relative;
     display: block;

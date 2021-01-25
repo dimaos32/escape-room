@@ -10,7 +10,7 @@
 
   p {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-weight: 800;
     font-size: 64px;
     line-height: 1.1;
@@ -27,7 +27,7 @@
     @include list-drop;
     display: flex;
     flex-wrap: wrap;
-    margin-left: -31px;
+    margin-left: -41px;
     margin-right: -50px;
   }
 
@@ -43,7 +43,8 @@
   display: flex;
   align-items: center;
   margin: -10px;
-  padding: 10px;
+  padding: 15px 10px;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: $quests--filter-link;
@@ -131,11 +132,12 @@
     margin: 120px 95px;
 
     h1 {
-      margin-bottom: 8px;
+      margin-top: -4px;
+      margin-bottom: 12px;
     }
 
     p {
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       font-size: 36px;
     }
   }
@@ -216,9 +218,6 @@
       opacity: 0.6;
     }
   }
-}
-
-@media (max-width: $tablet-width) {
   .quests__list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -231,6 +230,7 @@
 
   .quests__list {
     grid-template-columns: repeat(1, minmax(328px, 344px));
+    gap: 16px;
     justify-content: center;
   }
 }

@@ -26,7 +26,7 @@
   }
 
   h2 {
-    margin: auto 0 12px;
+    margin: auto 0 10px;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.2;
@@ -50,7 +50,7 @@
   address {
     display: flex;
     align-items: center;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
     font-style: normal;
     font-size: 13px;
     color: $quest-card--address;
@@ -96,8 +96,8 @@
     }
 
     &:first-of-type svg {
-      width: 11px;
-      height: 14px;
+      width: 13px;
+      height: 16px;
       fill: none;
       stroke: $quest-card--options-icon;
     }
