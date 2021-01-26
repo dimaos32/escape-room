@@ -1,5 +1,5 @@
 .order {
-  padding: 140px;
+  padding: 135px;
 
   img {
     position: fixed;
@@ -42,7 +42,7 @@
   position: relative;
   display: none;
   margin: -10px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   padding: 10px;
   padding-left: 24px;
   font-weight: bold;
@@ -98,8 +98,7 @@
     position: relative;
     display: block;
     margin-right: 24px;
-    padding: 5px 10px 3px 0;
-    padding-bottom: 3px;
+    padding: 7px 10px 5px 0;
     color: $order--link;
     border-bottom: 2px solid $order--link-decor;
 
@@ -152,7 +151,7 @@
     color: $order--legend-txt;
 
     &:last-of-type {
-      padding-left: 0;
+      margin-right: 0;
     }
 
     &::before {
@@ -241,11 +240,15 @@
     padding: 90px 16px;
 
     h1 {
-      margin-bottom: 40px;
-      padding-bottom: 12px;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
       font-size: 40px;
       line-height: 1.1;
       letter-spacing: normal;
+    }
+
+    span {
+      margin-left: 0;
     }
   }
 
