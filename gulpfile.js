@@ -95,7 +95,6 @@ gulp.task('html', function () {
       .pipe(posthtml([
         include()
       ]))
-      .pipe(replace('href="main.html"', 'href="index.html"'))
       .pipe(gulp.dest('build'));
 });
 
@@ -114,6 +113,12 @@ gulp.task('clean', function () {
   return del('build');
 });
 
+gulp.task('replace', function () {
+  return gulp.src('build/*.html')
+      .pipe(replace('href="main.html"', 'href="index.html"'))
+      .pipe(gulp.dest('build'));
+});
+
 gulp.task('renameMainHtml', function () {
   return gulp.src('build/main.html')
       .pipe(rename('index.html'))
@@ -124,5 +129,5 @@ gulp.task('delMainHtml', function () {
   return del('build/main.html');
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'javascript', 'sprite', 'html', 'renameMainHtml', 'delMainHtml'));
-gulp.task('start', gulp.series('build', 'server'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'javascript', 'sprite', 'html', 'replace', 'renameMainHtml', 'delMainHtml'));
+gulp.task('start', gulp.series('clean', 'copy', 'css', 'javascript', 'sprite', 'html', 'server'));
