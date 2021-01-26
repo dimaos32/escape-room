@@ -7,6 +7,7 @@ $black-almost:#1c1c1c;
 $black-coal: #23150e;
 
 $grey-dark: #3d3333;
+$grey: #b8b8b8;
 $grey-light: #c4c4c4;
 
 $white-dirty: #e6e6e6;
@@ -49,6 +50,7 @@ $page--bg: $black-almost;
 $btn--txt: $white;
 $btn--bg: $site;
 $btn--bg-hover: $site-bright;
+$btn--bg-disabled: $grey;
 
 
 $badge--hit-txt: $white-dirty;
@@ -65,6 +67,7 @@ $modal-feedback--checkbox-bg: rgba($site-darker, 0.4);
 $modal-feedback--checkbox-bg-hover: $site-darker;
 $modal-feedback--link: $white-dirty;
 $modal-feedback--link-hover: $site-darker;
+$modal-feedback--clarification: rgba($site-darker, 0.64);
 
 $modal-location--txt: $white-dirty;
 $modal-location--link: rgba($white, 0.32);
