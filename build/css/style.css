@@ -840,7 +840,7 @@ img {
     padding-bottom: 35px; }
   .quest--fatal-experiment .quest__wrapper {
     padding-top: 10px; }
-  .quest__wrapper h2 {
+  .quest__wrapper h1 {
     margin: 0;
     margin-bottom: 25px;
     font-weight: 900;
@@ -945,7 +945,7 @@ img {
   .quest__wrapper {
     width: 560px;
     margin-right: 60px; }
-    .quest__wrapper h2 {
+    .quest__wrapper h1 {
       font-size: 64px; } }
 
 @media (max-width: 767px) {
@@ -979,7 +979,7 @@ img {
           -ms-flex-direction: column;
               flex-direction: column;
       height: 350px; }
-    .quest__wrapper h2 {
+    .quest__wrapper h1 {
       margin-bottom: 20px;
       font-weight: 900;
       font-size: 42px;
