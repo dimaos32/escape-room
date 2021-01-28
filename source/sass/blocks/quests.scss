@@ -125,6 +125,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 344px);
   gap: 32px 24px;
+  max-width: 1080px;
 }
 
 @media (max-width: $tablet-width) {
@@ -218,6 +219,7 @@
       opacity: 0.6;
     }
   }
+
   .quests__list {
     grid-template-columns: repeat(2, 1fr);
   }
