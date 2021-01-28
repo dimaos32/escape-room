@@ -1236,7 +1236,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 24px 32px; }
+  padding: 24px 32px 0; }
   .site-nav__top--no-fixed {
     position: absolute; }
   .site-nav__top--quests {
