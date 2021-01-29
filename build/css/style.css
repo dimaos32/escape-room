@@ -1320,18 +1320,23 @@ img {
   display: block;
   width: 30px;
   height: 30px;
-  background-position: center;
+  background-image: url("../img/sprite-social-desktop@1x.png");
   background-repeat: no-repeat;
+  background-size: 76px 76px;
   border: none;
   outline: none; }
   .site-nav__social--instagram {
-    background-image: url("../img/social-instagram.svg"); }
+    background-position: -4px -4px; }
     .site-nav__social--instagram:hover, .site-nav__social--instagram:focus {
-      background-image: url("../img/social-instagram-hover.svg"); }
+      background-position: -42px -4px; }
   .site-nav__social--vk {
-    background-image: url("../img/social-vk.svg"); }
+    background-position: -4px -42px; }
     .site-nav__social--vk:hover, .site-nav__social--vk:focus {
-      background-image: url("../img/social-vk-hover.svg"); }
+      background-position: -42px -42px; }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .site-nav__social {
+    background-image: url("../img/sprite-social-desktop@2x.png"); } }
 
 @media (max-width: 1023px) {
   .site-nav__main-nav {
@@ -1349,14 +1354,26 @@ img {
     .site-nav__bottom li:not(:first-of-type) {
       margin-left: 12px; }
   .site-nav__social {
+    display: block;
     width: 44px;
     height: 44px;
     margin-left: -4px;
-    background-size: 36px 36px; } }
+    background-image: url("../img/sprite-social-tablet@1x.png");
+    background-size: 92px 92px; }
+    .site-nav__social--instagram {
+      background-position: -4px -4px; }
+      .site-nav__social--instagram:hover, .site-nav__social--instagram:focus {
+        background-position: -50px -4px; }
+    .site-nav__social--vk {
+      background-position: -4px -50px; }
+      .site-nav__social--vk:hover, .site-nav__social--vk:focus {
+        background-position: -50px -50px; } }
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .site-nav__social {
+    background-image: url("../img/sprite-social-tablet@2x.png"); } }
 
 @media (max-width: 767px) {
-  .site-nav__link--location {
-    margin-right: 0; }
   .site-nav--opened {
     position: fixed;
     z-index: 11;
@@ -1473,7 +1490,10 @@ img {
       font-size: 14px; }
     .site-nav__location .site-nav__link--location {
       font-size: 12px; }
+  .site-nav__link--location {
+    margin-right: 0; }
   .site-nav__bottom {
+    position: absolute;
     display: none; } }
 
 @-webkit-keyframes open-menu {
