@@ -234,6 +234,10 @@
   .order {
     padding: 140px 90px;
   }
+
+  .order__time {
+    max-width: none;
+  }
 }
 
 @media (max-width: $mobile-width) {

@@ -664,7 +664,9 @@ img {
 
 @media (max-width: 1023px) {
   .order {
-    padding: 140px 90px; } }
+    padding: 140px 90px; }
+  .order__time {
+    max-width: none; } }
 
 @media (max-width: 767px) {
   .order {
