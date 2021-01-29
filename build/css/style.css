@@ -638,7 +638,8 @@ img {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
-            user-select: none; }
+            user-select: none;
+    cursor: pointer; }
   .order__time input:disabled + label {
     padding: 7px 10px;
     border: none;

@@ -196,6 +196,7 @@
     border: 2px solid $order--legend-free;
     border-radius: 19px;
     user-select: none;
+    cursor: pointer;
   }
 
   input:disabled + label {
