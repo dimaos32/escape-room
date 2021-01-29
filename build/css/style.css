@@ -1380,12 +1380,21 @@ img {
   .site-nav--opened {
     position: fixed;
     z-index: 11;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     height: 100vh;
     background: linear-gradient(170.74deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
     -webkit-animation: 0.4s open-menu;
-            animation: 0.4s open-menu; }
+            animation: 0.4s open-menu;
+    overflow-y: auto; }
     .site-nav--opened .site-nav__top {
+      position: static;
       display: block; }
       .site-nav--opened .site-nav__top--quests {
         background-color: transparent; }
@@ -1496,8 +1505,9 @@ img {
   .site-nav__link--location {
     margin-right: 0; }
   .site-nav__bottom {
-    position: absolute;
-    display: none; } }
+    position: static;
+    display: none;
+    margin-top: auto; } }
 
 @-webkit-keyframes open-menu {
   0% {

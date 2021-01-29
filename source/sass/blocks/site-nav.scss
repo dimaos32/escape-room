@@ -259,12 +259,16 @@
     &--opened {
       position: fixed;
       z-index: 11;
+      display: flex;
+      flex-direction: column;
       width: 100%;
       height: 100vh;
       background: $site-nav--gradient;
       animation: 0.4s open-menu;
+      overflow-y: auto;
 
       .site-nav__top {
+        position: static;
         display: block;
 
         &--quests {
@@ -413,8 +417,9 @@
   }
 
   .site-nav__bottom {
-    position: absolute;
+    position: static;
     display: none;
+    margin-top: auto;
   }
 }
 
