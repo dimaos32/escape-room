@@ -44,5 +44,7 @@
     }
   };
 
+  siteNav.classList.remove('site-nav--nojs')
+
   menuBtn.addEventListener('click', onMenuBtnClick);
 })();

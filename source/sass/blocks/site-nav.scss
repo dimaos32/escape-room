@@ -259,7 +259,6 @@
     &--opened {
       position: fixed;
       z-index: 11;
-      display: flex;
       flex-direction: column;
       width: 100%;
       height: 100vh;
@@ -282,6 +281,25 @@
 
       .site-nav__bottom {
         display: flex;
+      }
+    }
+
+    &--nojs {
+      .site-nav__top {
+        position: static;
+        display: block;
+      }
+
+      .site-nav__wrapper {
+        display: flex;
+      }
+
+      .site-nav__bottom {
+        display: flex;
+      }
+
+      .site-nav__menu-btn {
+        display: none;
       }
     }
   }

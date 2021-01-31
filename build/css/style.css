@@ -1380,9 +1380,6 @@ img {
   .site-nav--opened {
     position: fixed;
     z-index: 11;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1406,6 +1403,19 @@ img {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+  .site-nav--nojs .site-nav__top {
+    position: static;
+    display: block; }
+  .site-nav--nojs .site-nav__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .site-nav--nojs .site-nav__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .site-nav--nojs .site-nav__menu-btn {
+    display: none; }
   .site-nav__inner {
     display: -webkit-box;
     display: -ms-flexbox;
