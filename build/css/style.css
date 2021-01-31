@@ -424,6 +424,11 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .modal--nojs {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: transparent; }
 
 .modal__content {
   position: relative;
@@ -435,6 +440,8 @@ img {
   background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border-radius: 3px;
   overflow-y: auto; }
+  .modal--nojs .modal__content {
+    background: transparent; }
 
 .modal__close-btn {
   content: "";

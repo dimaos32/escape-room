@@ -11,6 +11,13 @@
     right: 0;
     display: flex;
   }
+
+  &--nojs {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: transparent;
+  }
 }
 
 .modal__content {
@@ -22,6 +29,10 @@
   background: $modal--bg;
   border-radius: 3px;
   overflow-y: auto;
+
+  .modal--nojs & {
+    background: transparent;
+  }
 }
 
 .modal__close-btn {
