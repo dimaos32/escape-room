@@ -100,17 +100,23 @@ img {
   border-radius: 32px;
   outline: none;
   cursor: pointer; }
+  .btn:hover {
+    background-color: #f39425; }
+  .btn:focus {
+    padding: 18px;
+    background-color: #f39425;
+    border: 2px solid #ffffff; }
+  .btn:active {
+    opacity: 0.6; }
+  .btn:disabled {
+    background-color: #b8b8b8; }
   .btn--modal {
     width: 220px;
     padding: 13px;
     font-size: 14px;
     border-radius: 23px; }
-  .btn:hover, .btn:focus {
-    background-color: #f39425; }
-  .btn:active {
-    opacity: 0.6; }
-  .btn:disabled {
-    background-color: #b8b8b8; }
+    .btn--modal:focus {
+      padding: 11px; }
 
 @media (max-width: 767px) {
   .btn--transform {
@@ -118,6 +124,8 @@ img {
     padding: 13px;
     font-size: 14px;
     border-radius: 23px; }
+    .btn--transform:focus {
+      padding: 11px; }
     .btn--transform--modal {
       width: 220px; } }
 
