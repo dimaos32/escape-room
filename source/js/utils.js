@@ -68,6 +68,17 @@
     if (modal.classList.contains('modal')) {
       modal.classList.add('modal--opened');
     }
+
+    if (modal.classList.contains('modal--feedback')) {
+      var userName = modal.querySelector('#name');
+      var userQuestion = modal.querySelector('#question');
+
+      if (!userName.value) {
+        userName.focus();
+      } else {
+        userQuestion.focus();
+      }
+    }
   };
 
   var closeModal = function (modal) {
