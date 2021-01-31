@@ -2,6 +2,7 @@
 
 (function () {
   var HTML = document.querySelector('html');
+  var siteNav = document.querySelector('.site-nav');
 
   function Modal(modal, closeBtn) {
     this.modal = modal;
@@ -53,6 +54,10 @@
   }
 
   var openModal = function (modal) {
+    if (siteNav.classList.contains('site-nav--opened')) {
+      siteNav.classList.remove('site-nav--opened');
+    }
+
     if (document.body.offsetHeight > window.innerHeight) {
       document.body.dataset.scrollY = self.pageYOffset;
       document.body.style.top = document.body.dataset.scrollY * -1 + 'px';

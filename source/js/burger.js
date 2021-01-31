@@ -8,14 +8,14 @@
 
   var onMenuBtnClick = function () {
     if (siteNav.classList.contains('site-nav--opened')) {
-      siteNav.classList.remove('site-nav--opened');
       window.utils.closeModal(siteNav);
+      siteNav.classList.remove('site-nav--opened');
 
       siteNav.removeEventListener('click', onSiteNavClick);
       document.removeEventListener('keydown', onOpenModalEscPress);
     } else {
-      siteNav.classList.add('site-nav--opened');
       window.utils.openModal(siteNav);
+      siteNav.classList.add('site-nav--opened');
 
       siteNav.addEventListener('click', onSiteNavClick);
       document.addEventListener('keydown', onOpenModalEscPress);
