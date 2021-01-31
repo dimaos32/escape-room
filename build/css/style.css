@@ -288,7 +288,7 @@ img {
     outline: none; }
   .modal-feedback__input textarea {
     height: 120px;
-    resize: vertical; }
+    resize: none; }
 
 .modal-feedback__submit {
   margin: 0 auto 24px; }
