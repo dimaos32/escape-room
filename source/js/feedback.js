@@ -15,7 +15,6 @@
   var validity = {
     name: false,
     email: false,
-    question: false,
   };
 
   var onFormSubmit = function () {
@@ -26,12 +25,13 @@
   };
 
   var checkValidity = function (input, target) {
-
     if (input && target.value) {
       input.classList.add('modal-feedback__input--success');
+      input.classList.remove('modal-feedback__input--error');
       validity[target.name] = true;
     } else if (input) {
       input.classList.remove('modal-feedback__input--success');
+      input.classList.add('modal-feedback__input--error');
       validity[target.name] = false;
     }
 
@@ -53,7 +53,7 @@
       }
     }
 
-    if (agreement.checked && validity.name && validity.email && validity.question) {
+    if (agreement.checked && validity.name && validity.email) {
       submitBtn.disabled = false;
     } else {
       submitBtn.disabled = true;
@@ -61,9 +61,21 @@
   };
 
   var ontextFieldInput = function (evt) {
-    var input = evt.target.closest('.modal-feedback__input');
+    if (evt.target.closest('.modal-feedback__input input')) {
+      var input = evt.target.closest('.modal-feedback__input');
+    }
 
     checkValidity(input, evt.target);
+  };
+
+  var ontextFieldFocusOut = function (evt) {
+    if (evt.target.closest('.modal-feedback__input input')) {
+      var input = evt.target.closest('.modal-feedback__input');
+
+      if (!evt.target.value) {
+        input.classList.add('modal-feedback__input--error');
+      }
+    }
   };
 
   try {
@@ -83,5 +95,6 @@
   submitBtn.disabled = true;
 
   feedback.addEventListener('input', ontextFieldInput);
+  feedback.addEventListener('focusout', ontextFieldFocusOut);
   feedback.addEventListener('submit', onFormSubmit);
 })();
