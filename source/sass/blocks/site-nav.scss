@@ -120,7 +120,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    max-width: 600px;
+    width: 650px;
+
+    outline: 2px dashed yellow;
   }
 
   li {

@@ -177,38 +177,38 @@
   display: flex;
   margin-left: 45px;
   margin-bottom: 48px;
+}
 
-  li {
-    position: relative;
-    margin-right: 24px;
-    padding-left: 20px;
-    font-size: 12px;
-    color: $order--legend-txt;
+.order__legend-item {
+  position: relative;
+  margin-right: 24px;
+  padding-left: 20px;
+  font-size: 12px;
+  color: $order--legend-txt;
 
-    &:last-of-type {
-      margin-right: 0;
-    }
+  &:last-of-type {
+    margin-right: 0;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 2px;
-      left: 0;
-      width: 15px;
-      height: 15px;
-      border: 2px solid $order--legend-free;
-      border-radius: 3px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid $order--legend-free;
+    border-radius: 3px;
+  }
 
-    &:nth-of-type(2)::before {
-      border: none;
-      background: $order--legend-ordered;
-    }
+  &--reserved::before {
+    border: none;
+    background: $order--legend-ordered;
+  }
 
-    &:nth-of-type(3)::before {
-      border: none;
-      background: $order--legend-selected;
-    }
+  &--selected::before {
+    border: none;
+    background: $order--legend-selected;
   }
 }
 
