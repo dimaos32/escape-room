@@ -1363,8 +1363,7 @@ img {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 650px;
-    outline: 2px dashed yellow; }
+    max-width: 650px; }
   .site-nav__main-nav li {
     margin: 0 13px; }
 
