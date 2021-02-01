@@ -938,34 +938,35 @@ img {
     display: flex;
     margin-left: 30px;
     margin-bottom: 15px; }
-  .quest__wrapper li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 7px 24px;
-    font-weight: 400;
-    font-size: 14px;
-    color: #e6e6e6;
-    border-right: 1px solid rgba(255, 255, 255, 0.36); }
-    .quest__wrapper li:first-of-type {
-      padding-left: 0; }
-    .quest__wrapper li:last-of-type {
-      padding-right: 0;
-      border-right: none; }
-    .quest__wrapper li svg {
-      display: block;
-      margin-right: 8px;
-      width: 21px;
-      height: 21px;
-      fill: #ffffff; }
-    .quest__wrapper li:nth-of-type(2) svg {
-      width: 16px;
-      height: 21px;
-      fill: none;
-      stroke: #ffffff; }
+
+.quest__rule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 24px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #e6e6e6;
+  border-right: 1px solid rgba(255, 255, 255, 0.36); }
+  .quest__rule:first-of-type {
+    padding-left: 0; }
+  .quest__rule:last-of-type {
+    padding-right: 0;
+    border-right: none; }
+  .quest__rule svg {
+    display: block;
+    margin-right: 8px;
+    width: 21px;
+    height: 21px;
+    fill: #ffffff; }
+  .quest__rule--specific-icon svg {
+    width: 16px;
+    height: 21px;
+    fill: none;
+    stroke: #ffffff; }
 
 .quest__quests {
   position: relative;
@@ -1067,24 +1068,24 @@ img {
       letter-spacing: normal; }
     .quest__wrapper ul {
       margin: 0 -16px 30px; }
-    .quest__wrapper li {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      width: 33.33333%;
-      height: 53px;
-      padding: 0 24px;
-      text-align: center; }
-      .quest__wrapper li:first-of-type {
-        padding-left: 24px; }
-      .quest__wrapper li:last-of-type {
-        padding-right: 24px; }
-      .quest__wrapper li svg {
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
-        margin-right: 0;
-        margin-bottom: 8px; }
+  .quest__rule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 33.33333%;
+    height: 53px;
+    padding: 0 24px;
+    text-align: center; }
+    .quest__rule:first-of-type {
+      padding-left: 24px; }
+    .quest__rule:last-of-type {
+      padding-right: 24px; }
+    .quest__rule svg {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      margin-right: 0;
+      margin-bottom: 8px; }
   .quest__quests {
     display: block; }
   .quest__genre {
