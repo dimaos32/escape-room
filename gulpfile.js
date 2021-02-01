@@ -39,6 +39,7 @@ gulp.task('javascript', function () {
     './source/js/burger.js',
     './source/js/modal.js',
     './source/js/feedback.js',
+    './source/js/order.js',
   ])
       .pipe(sourcemap.init())
       .pipe(concat('main.js'))

@@ -123,13 +123,25 @@
 
   <a class="order__quest" href="quest-maniac.html">Описание</a>
 
-  <h1>
-    <span>выбранный квест</span>
-    Маньяк
-  </h1>
+  <div class="order__header">
+    <h1>
+      <span>выбранный квест</span>
+      Маньяк
+    </h1>
+
+    <div class="order__details order__details--top order__details--hidden">
+      <p>
+        Вы выбрали игру<br>
+        <output class="order__selected-date">22 марта</output> в <output class="order__selected-time">16:00</output>.<br>
+        К оплате <output class="order__selected-price">1500</output> рублей.
+      </p>
+
+      <a class="order__link" href="#">Перейти к оплате</a>
+    </div>
+  </div>
 
   <div class="order__date">
-    <a href="#">Выберите дату</a>
+    <a class="order__link" href="#">Выберите дату</a>
     <time datetime="2021-03-22">22 марта</time>
   </div>
 
@@ -212,6 +224,15 @@
       <p>2000 ₽</p>
     </li>
   </ul>
+
+  <div class="order__details order__details--bottom order__details--hidden">
+    <p>
+      Вы выбрали игру <output class="order__selected-date">22 марта</output> в <output class="order__selected-time">16:00</output>.<br>
+      К оплате <output class="order__selected-price">1500</output> рублей.
+    </p>
+
+    <a class="order__link" href="#">Перейти к оплате</a>
+  </div>
 </section>
 
 <section class="modal modal--location">

@@ -44,7 +44,7 @@
     }
   };
 
-  siteNav.classList.remove('site-nav--nojs')
+  siteNav.classList.remove('site-nav--nojs');
 
   menuBtn.addEventListener('click', onMenuBtnClick);
 })();
