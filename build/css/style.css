@@ -907,11 +907,16 @@ img {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.quest__about {
+  z-index: 1;
+  width: 100%;
+  max-width: 1366px;
+  margin: auto; }
+
 .quest__wrapper {
   width: 680px;
-  margin: auto;
-  margin-right: 85px;
-  z-index: 1; }
+  margin-left: auto;
+  margin-right: 85px; }
   .quest--maniac .quest__wrapper {
     padding-bottom: 30px; }
   .quest--old-mansion-secrets .quest__wrapper {
