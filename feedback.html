@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Лучшие квесты в Новосибирске - более 10 игровых площадок. Каждый квест уникален.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Escape Room | Тайны старого особняка</title>
+  <title>Escape Room | Заказ квеста</title>
   <link rel="preload" href="fonts/raleway-400.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/raleway-500.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/raleway-600.woff2" as="font" crossorigin="anonymous">
@@ -101,96 +101,9 @@
   </div>
 </header>
 
-<section class="quest quest--old-mansion-secrets">
-  <picture>
-    <source media="(max-width: 767px)" type="image/webp" srcset="img/quests/old-mansion-secrets-mobile@1x.webp 1x, img/quests/old-mansion-secrets-mobile@2x.webp 2x">
-    <source type="image/webp" srcset="img/quests/old-mansion-secrets-desktop@1x.webp 1x, img/quests/old-mansion-secrets-desktop@2x.webp 2x">
-      <source media="(max-width: 767px)" srcset="img/quests/old-mansion-secrets-mobile@1x.jpg 1x, img/quests/old-mansion-secrets-mobile@2x.jpg 2x">
-    <!-- 1х: 1366px; 2x: 2732px -->
-    <img src="img/quests/old-mansion-secrets-desktop@1x.jpg" srcset="img/quests/old-mansion-secrets-desktop@2x.jpg 2x" width="1366" height="768" alt="Мрачный особняк в сумерках">
-  </picture>
+<h1 class="visually-hidden">Форма обратной связи</h1>
 
-  <div class="quest__about">
-    <div class="quest__wrapper">
-      <a class="quest__quests" href="quests.html">Все квесты</a>
-
-      <div>
-        <p class="quest__genre">приключение, детектив</p>
-
-        <h1>Тайны старого особняка</h1>
-      </div>
-
-      <ul>
-        <li class="quest__rule">
-          <svg width="21" height="21" viewbox="0 0 14 14">
-            <use xlink:href="img/sprite_auto.svg#icon-clock"></use>
-          </svg>
-          60 мин
-        </li>
-
-        <li class="quest__rule quest__rule--specific-icon">
-          <svg width="16" height="21" viewbox="0 0 11 14">
-            <use xlink:href="img/sprite_auto.svg#icon-person"></use>
-          </svg>
-          2–5 чел
-        </li>
-
-        <li class="quest__rule">
-          <svg width="21" height="21" viewbox="0 0 14 14">
-            <use xlink:href="img/sprite_auto.svg#icon-puzzle"></use>
-          </svg>
-          легкий квест
-        </li>
-      </ul>
-
-      <p class="quest__descr">Погрузитесь в атмосферу служебных помещений закулисья, которые хранят множество тайн и загадок. Вы окажитесь в старом особнякеи увидите все, что скрывают его запутанные коридоры. </p>
-
-      <a class="btn btn quest__btn" href="order.html">Забронировать</a>
-    </div>
-  </div>
-</section>
-
-<section class="modal modal--location">
-  <div class="modal__content modal-location">
-    <h2>Ваш город:</h2>
-    <a class="modal-location__autodetect" href="#">
-      <svg width="24" height="24">
-        <use xlink:href="img/sprite_auto.svg#icon-target"></use>
-      </svg>
-      <span>Определить местоположение</span>
-    </a>
-
-    <p>... или выберите вручную</p>
-
-    <ul>
-      <li><a class="modal-location__link modal-location__link--current" href="#">
-        <span>Новосибирск</span>
-      </a></li>
-
-      <li><a class="modal-location__link" href="#">
-        <span>Иркутск</span>
-      </a></li>
-
-      <li><a class="modal-location__link" href="#">
-        <span>Смоленск</span>
-      </a></li>
-
-      <li><a class="modal-location__link" href="#">
-        <span>Волгоград</span>
-      </a></li>
-
-      <li><a class="modal-location__link" href="#">
-        <span>Комсомольск-на-Амуре</span>
-      </a></li>
-    </ul>
-
-    <button class="modal__close-btn" type="button">
-      <span class="visually-hidden">Закрыть окно</span>
-    </button>
-  </div>
-</section>
-
-<section class="modal modal--feedback">
+<section class="modal modal--nojs modal--feedback">
   <div class="modal__content modal-feedback">
     <h2>Задайте вопрос</h2>
 
@@ -221,14 +134,8 @@
         Я согласен с <a href="#">правилами обработки персональных данных</a> и пользовательским соглашением
       </label>
     </form>
-
-    <button class="modal__close-btn" type="button">
-      <span class="visually-hidden">Закрыть окно</span>
-    </button>
   </div>
 </section>
-
-<script src="js/main.js"></script>
 
 </body>
 </html>

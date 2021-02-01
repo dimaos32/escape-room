@@ -16,7 +16,7 @@
 
 <body class="page">
 
-<header class="site-nav">
+<header class="site-nav site-nav--nojs">
   <div class="site-nav__top site-nav__top--no-fixed">
     <div class="site-nav__inner">
       <a class="logo" href="index.html">
@@ -70,7 +70,7 @@
       </nav>
 
       <div class="site-nav__location">
-        <a class="site-nav__link site-nav__link--location" href="#">
+        <a class="site-nav__link site-nav__link--location" href="location.html">
           <svg width="16" height="21">
             <use xlink:href="img/sprite_auto.svg#icon-location"></use>
           </svg>
@@ -95,7 +95,7 @@
       </a></li>
     </ul>
 
-    <a class="site-nav__link site-nav__link--question" href="#">
+    <a class="site-nav__link site-nav__link--question" href="feedback.html">
       <span>Задать вопрос</span>
     </a>
   </div>
@@ -112,14 +112,26 @@
 
   <a class="order__quest" href="quest-maniac.html">Описание</a>
 
-  <h1>
-    <span>выбранный квест</span>
-    Маньяк
-  </h1>
+  <div class="order__header">
+    <h1>
+      <span>выбранный квест</span>
+      Маньяк
+    </h1>
+
+    <div class="order__details order__details--top order__details--hidden">
+      <p>
+        Вы выбрали игру<br>
+        <output class="order__selected-date">22 марта</output> в <output class="order__selected-time">16:00</output>.<br>
+        К оплате <output class="order__selected-price">1500</output> рублей.
+      </p>
+
+      <a class="order__link" href="#">Перейти к оплате</a>
+    </div>
+  </div>
 
   <div class="order__date">
-    <a href="#">Выберите дату</a>
-    <time 2021-03-22"="">22 марта</time>
+    <a class="order__link" href="#">Выберите дату</a>
+    <time datetime="2021-03-22">22 марта</time>
   </div>
 
   <ul class="order__legend">
@@ -201,6 +213,15 @@
       <p>2000 ₽</p>
     </li>
   </ul>
+
+  <div class="order__details order__details--bottom order__details--hidden">
+    <p>
+      Вы выбрали игру <output class="order__selected-date">22 марта</output> в <output class="order__selected-time">16:00</output>.<br>
+      К оплате <output class="order__selected-price">1500</output> рублей.
+    </p>
+
+    <a class="order__link" href="#">Перейти к оплате</a>
+  </div>
 </section>
 
 <section class="modal modal--location">
@@ -251,13 +272,15 @@
       <label for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
       <div class="modal-feedback__input">
         <span>Имя</span>
-        <input type="text" name="name" id="name" placeholder="Имя">
+        <input type="text" name="name" id="name" placeholder="Имя" required="">
+        <div>Введите пожалуйста Ваше имя</div>
       </div>
 
       <label for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
       <div class="modal-feedback__input">
         <span>E-mail</span>
-        <input type="email" name="email" id="email" placeholder="E-mail">
+        <input type="email" name="email" id="email" placeholder="E-mail" required="">
+        <div>Введён некорректный e-mail, попробуйте заново</div>
       </div>
 
       <label for="question">Ваш вопрос:</label>
