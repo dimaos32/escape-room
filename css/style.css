@@ -441,7 +441,9 @@ img {
   border-radius: 3px;
   overflow-y: auto; }
   .modal--nojs .modal__content {
-    background: transparent; }
+    max-height: none;
+    background: transparent;
+    overflow-y: visible; }
 
 .modal__close-btn {
   content: "";
@@ -1433,7 +1435,7 @@ img {
   .site-nav__link {
     font-size: 16px; }
   .site-nav__top {
-    padding: 20px 16px; }
+    padding: 20px 16px 0; }
     .site-nav__top li:not(:first-of-type) {
       margin-left: 8px; }
   .site-nav__bottom {
