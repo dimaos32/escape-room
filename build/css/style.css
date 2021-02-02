@@ -1433,7 +1433,7 @@ img {
   .site-nav__link {
     font-size: 16px; }
   .site-nav__top {
-    padding: 20px 16px; }
+    padding: 20px 16px 0; }
     .site-nav__top li:not(:first-of-type) {
       margin-left: 8px; }
   .site-nav__bottom {
