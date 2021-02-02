@@ -441,7 +441,9 @@ img {
   border-radius: 3px;
   overflow-y: auto; }
   .modal--nojs .modal__content {
-    background: transparent; }
+    max-height: none;
+    background: transparent;
+    overflow-y: visible; }
 
 .modal__close-btn {
   content: "";
